@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 900px;
+    margin: auto;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    padding: 45px;
+}
+
+.card h1,
+p {
+    color: #ffffff;
+}
+
+.card img {
+    margin-bottom: 10px;
+}
+
+.card h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+.card-button {
+    padding: 15px 30px 15px 30px;
+    border: solid #f2f2f200 2px;
+    background-color: #f2f2f2;
+    border-radius: 24px;
+    position: relative;
+    top: 75px;
+}
+
+.card-button:hover {
+    border: solid #f2f2f2 2px;
+    transition: ease 0.2s;
+    color: #f2f2f2;
+}
+
+.card-1-button:hover {
+    background-color: #e38826;
+}
+
+.card-2-button:hover {
+    background-color: #006970;
+}
+
+.card-3-button:hover {
+    background-color: #004241;
+}
+
+.card-1 a {
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #e38826;
+}
+
+.card-2 a {
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #006970;
+}
+
+.card-3 a {
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #004241;
+}
+
+.card-description {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.6;
+}
+
+.card-1 {
+    background-color: #e38826;
+    border-radius: 10px 0 0 10px;
+}
+
+.card-2 {
+    background-color: #006970;
+}
+
+.card-3 {
+    background-color: #004241;
+    border-radius: 0 10px 10px 0;
+}
+
+.card p {
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+}
+
+@media screen and (max-width: 1000px) {
+    .cards-container {
+        flex-direction: column;
+        margin: 75px 0 75px 0;
+        width: 100%;
+        height: 1350px;
+    }
+    .card-1 {
+        border-radius: 10px 10px 0 0;
+    }
+    .card-3 {
+        border-radius: 0 0 10px 10px;
+    }
+    .card-button {
+        top: 30px;
+    }
+}
